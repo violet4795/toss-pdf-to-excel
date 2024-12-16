@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Upload and Download</title>
+</head>
+<body>
+    <h1>PDF Upload and Download</h1>
+
+    <!-- PDF 파일 업로드 폼 -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Upload a PDF:</label>
+        <input type="file" name="file" accept="application/pdf">
+        <button type="submit">Upload</button>
+    </form>
+
+    <!-- 다운로드 버튼 -->
+    <h2>Download PDF</h2>
+    <form action="/download/sample.pdf" method="get">
+        <button type="submit">Download Sample PDF</button>
+    </form>
+</body>
+</html>
